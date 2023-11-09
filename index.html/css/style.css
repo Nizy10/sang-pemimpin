@@ -88,8 +88,41 @@ color: #fff;
     display: none;
 }
 
+/* navbar search form */
+.navbar .search-form {
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: #fff;
+    width: 35rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
 
-/* Hero Selection */ 
+.navbar .search-form.active {
+    transform: scaleY(1);
+}
+
+.navbar .search-form input {
+    height: 90%;
+    width: 90%;
+    font-size: 1.6rem;
+    color: var(--bg);
+    padding: 1rem;
+}
+
+.navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: var(--bg);
+}
+
+/* Hero Section */ 
 .hero {
     min-height: 100vh;
     display: flex;
@@ -367,6 +400,11 @@ footer .credit a {
 
 .about .row {
     flex-wrap: wrap;
+}
+
+.navbar .search-form {
+    width: 70%;
+    right: 2rem;
 }
 
 .about .row .about-img img{
