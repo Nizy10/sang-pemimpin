@@ -398,13 +398,14 @@ footer .credit a {
     transform: scaleX(0.2)
 }
 
-.about .row {
-    flex-wrap: wrap;
-}
-
 .navbar .search-form {
     width: 70%;
     right: 2rem;
+}
+
+
+.about .row {
+    flex-wrap: wrap;
 }
 
 .about .row .about-img img{
